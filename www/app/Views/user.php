@@ -1,5 +1,5 @@
 <div x-data="initData()" x-init="fetchData()" class="w-full">
-  <div x-show="loading" >
+  <div x-show="loading" class="flex justify-center">
     <img src="<?=base_url();?>images/loading.gif">
   </div>
   <div x-show="!loading" class="rounded-lg border border-gray-200 shadow-md m-5">
