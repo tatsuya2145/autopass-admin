@@ -30,6 +30,7 @@ class AccountModel extends Model
   function getAccounts($url){
     $data = $this->builder()
                   ->where('url',$url)
+                  ->where('deleted',0)
                   ->get()
                   ->getResultArray();
     return $data;
